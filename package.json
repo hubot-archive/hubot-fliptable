@@ -1,7 +1,7 @@
 {
   "name": "hubot-fliptable",
   "description": "A hubot script to flip a table",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "JJ Asghar <jjasghar@gmail.com>",
   "license": "MIT",
 
@@ -12,11 +12,11 @@
 
   "repository": {
     "type": "git",
-    "url": "git@github.com:jjasghar/hubot-fliptable.git"
+    "url": "git@github.com:hubot-scripts/hubot-fliptable.git"
   },
 
   "bugs": {
-    "url": "https://github.com/jjasghar/hubot-fliptable/issues"
+    "url": "https://github.com/hubot-scripts/hubot-fliptable/issues"
   },
 
   "dependencies": {
