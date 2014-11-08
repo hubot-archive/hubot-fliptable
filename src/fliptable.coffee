@@ -9,19 +9,32 @@
 #
 # Commands:
 #   hubot flip - Hubot flips a table
-#   hubot rage - Hubot rages a table
-#   hubot set - Hubot sets a table
 #
 # Author:
 #   jjasghar
+#   Jason Dixon
 
 module.exports = (robot) ->
 
   robot.respond /flip\b/i, (msg) ->
-    msg.send "(╯°□°）╯︵ ┻━┻"
+    flips = [
+      '(╯°□°）╯︵ ┻━┻',
+      '┬─┬﻿ ノ( ゜-゜ノ)',
+      '(ノ ゜Д゜)ノ ︵ ┻━┻',
+      '(╯°□°)╯︵ ┻━┻ ︵ ╯(°□° ╯)',
+      '┬─┬﻿ ︵ /(.□. \）',
+      '‎(ﾉಥ益ಥ）ﾉ﻿ ┻━┻',
+      '(ノ^_^)ノ┻━┻ ┬─┬ ノ( ^_^ノ)',
+      '(╯°Д°）╯︵ /(.□ . \)',
+      "(╯'□')╯︵ ┻━┻",
+      '(ﾉಥДಥ)ﾉ︵┻━┻･/',
+      '(/ .□.)\ ︵╰(゜Д゜)╯︵ /(.□. \)',
+      '(._.) ~ ︵ ┻━┻',
+      'ʕノ•ᴥ•ʔノ ︵ ┻━┻',
+      '(/¯◡ ‿ ◡)/¯ ~ ┻━┻',
+      '(/¯◡ ‿ ◡)/¯ ~ ┻━┻',
+      '┻━┻ ︵ ლ(⌒-⌒ლ)',
+      'ʇǝʞɔɐɹq ︵ヽ(`Д´)ﾉ︵ ǝʞup'
+    ]
+    msg.send flips[Math.floor(Math.random()*flips.length)]
 
-  robot.respond /rage\b/i, (msg) ->
-    msg.send "(ﾉಥ益ಥ）ﾉ ┻━┻"
-
-  robot.respond /set\b/i, (msg) ->
-    msg.send "┬─┬ ノ( ゜-゜ノ)"
