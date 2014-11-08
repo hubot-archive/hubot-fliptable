@@ -36,5 +36,5 @@ module.exports = (robot) ->
       '┻━┻ ︵ ლ(⌒-⌒ლ)',
       'ʇǝʞɔɐɹq ︵ヽ(`Д´)ﾉ︵ ǝʞup'
     ]
-    msg.send flips[Math.floor(Math.random()*flips.length)]
+    msg.send msg.random flips
 
