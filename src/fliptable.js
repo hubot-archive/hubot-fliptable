@@ -1,23 +1,23 @@
-# Description:
-#   Make hubot flip a table
-#
-# Dependencies:
-#   None
-#
-# Configuration:
-#   None
-#
-# Commands:
-#   hubot flip - Hubot flips a table
-#
-# Author:
-#   jjasghar
-#   Jason Dixon
+// Description:
+//   Make hubot flip a table
+//
+// Dependencies:
+//   None
+//
+// Configuration:
+//   None
+//
+// Commands:
+//   hubot flip - Hubot flips a table
+//
+// Author:
+//   jjasghar
+//   Jason Dixon
 
-module.exports = (robot) ->
+module.exports = robot =>
 
-  robot.respond /flip\b/i, (msg) ->
-    flips = [
+  robot.respond(/flip\b/i, function(msg) {
+    const flips = [
       '(╯°□°）╯︵ ┻━┻',
       '┬─┬﻿ ノ( ゜-゜ノ)',
       '(ノ ゜Д゜)ノ ︵ ┻━┻',
@@ -35,6 +35,7 @@ module.exports = (robot) ->
       '(/¯◡ ‿ ◡)/¯ ~ ┻━┻',
       '┻━┻ ︵ ლ(⌒-⌒ლ)',
       'ʇǝʞɔɐɹq ︵ヽ(`Д´)ﾉ︵ ǝʞup'
-    ]
-    msg.send msg.random flips
-
+    ];
+    return msg.send(msg.random(flips));
+  })
+;
