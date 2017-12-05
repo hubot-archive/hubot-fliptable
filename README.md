@@ -1,10 +1,8 @@
 # Hubot: hubot-fliptable
 
-[![Build Status](https://travis-ci.org/jjasghar/hubot-fliptable.png?branch=master)](https://travis-ci.org/jjasghar/hubot-fliptable)
-
 Sometimes you need to flip a table.
 
-See [`src/fliptable.coffee`](src/fliptable.coffee) for full documentation.
+See [`src/fliptable.js`](src/fliptable.js) for full documentation.
 
 ## Installation
 
@@ -29,6 +27,6 @@ Run `npm install hubot-fliptable`
 ## Sample Interaction
 
 ```
-user1> hubot flip 
+user1> hubot flip
 Hubot> (╯°□°）╯︵ ┻━┻
 ```
